@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+    <script src="../static/app.js" defer></script>
+    <title>Mi página web</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Una pagina web más</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#servicios">SERVICIOS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+            <li><a href="#acerca">ACERCA DE MÍ</a></li>
+        </ul>
+        <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <header id="inicio" class="hero-section">
+        <h1>Bienvenido a Mi Espacio Web</h1>
+        <p>Aquí comparto mis conocimientos, experiencias y servicios.</p>
+        <a href="#servicios" class="btn-primary">Explorar Más</a>
+    </header>
+
+    <main>
+        <section id="servicios" class="cards-container">
+            <h2>¿Qué Ofrezco?</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Desarrollo Web</h3>
+                    <p>Creación de sitios web modernos y funcionales.</p>
+                </div>
+                <div class="card">
+                    <h3>Asesoría Tecnológica</h3>
+                    <p>Guía en la implementación de herramientas digitales.</p>
+                </div>
+                <div class="card">
+                    <h3>Soluciones Personalizadas</h3>
+                    <p>Adaptación de tecnología a tus necesidades específicas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <h2>Contáctame</h2>
+            <form id="contact-form" method="POST" action="/send_email">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="correo" placeholder="Correo Electrónico" required>
+                <textarea name="mensaje" placeholder="Escríbeme tu consulta" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Contenedor para mensajes flash -->
+        <div id="flash-messages" class="flash-messages"></div>
+        
+        <section id="acerca" class="about-section">
+            <h2>Sobre Mí</h2>
+            <p>Soy un apasionado de la tecnología y la innovación, enfocado en el desarrollo de soluciones digitales que faciliten la vida de las personas y empresas.</p>
+            <p>Desde programación hasta asesoramiento tecnológico, mi objetivo es crear herramientas eficientes y accesibles para todos.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
